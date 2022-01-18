@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css practice</title>
+    <style>
+        /* universal */
+        * {
+            font-family: sans-serif;
+            color: white;
+
+        }
+
+        /* type Selector */
+        h1 {
+            background-color: blue;
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 40px;
+            color: black;
+        }
+
+        /* Descendant Selector */
+
+        ol li {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* chield selector */
+        li>a {
+            color: red;
+            font-size: 40px;
+            text-decoration: none;
+        }
+
+        /* Adjacent Sibling Selector */
+        h1+h2 {
+            color: chocolate;
+            font-weight: bold;
+        }
+
+        /* General Sibling Selector */
+        p~h1,
+        h2 {
+            color: black;
+            background-color: darkred;
+        }
+
+        /* id selector */
+        #h1-2 {
+            text-decoration: underline;
+        }
+
+        /* class selector   */
+        .h2-c {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="h1-2">Introduction of CSS</h1>
+    <h2 class="h2-c">What is CSS</h2>
+    <ol>
+        <li><a href="">first</a></li>
+        <li><a href="">second</a></li>
+        <li><a href="">third</a></li>
+    </ol>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Totam placeat esse neque, exercitationem quia quidem dolorum iste
+
+        voluptatibus labore nulla suscipit ex doloremque velit saepe aspernatur!
+        Laborum labore nulla similique.</p>
+    <h1> Laborum labore nulla similique.</h1>
+    <h2> Laborum labore nulla similique.</h2>
+
+</body>
+
+</html>
